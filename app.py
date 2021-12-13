@@ -37,7 +37,7 @@ def predict():
     data.extend(X20)
     prediction = model.predict(data)
 
-    return render_template('index.html', result = prediction)
+    return render_template('index.html', result = prediction, X1=X1, X2=X2, X3=X3, X4=X4, X5=X5, X6=X6, X7=X7, X8=X8, X9=X9, X10=X10, X11=X11, X12=X12, X13=X13, X14=X14, X15=X15, X16=X16, X17=X17, X18=X18, X19=X19, X20=X20)
 
 if __name__ == '__main__':
     app.run(debug=True)
