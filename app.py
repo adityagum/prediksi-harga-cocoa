@@ -19,7 +19,7 @@ def predict():
     features = [float(x) for x in request.form.values()]
    
     data = []
-    data.append(features)
+    data.append(int(features))
     prediction = model.predict(data)
 
     return render_template('index.html', result = prediction)
