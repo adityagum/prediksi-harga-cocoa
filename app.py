@@ -20,7 +20,7 @@ def predict():
    
     data = []
     data.append(int(features))
-    prediction = model.predict(data)
+    prediction = model.predict([data])
 
     return render_template('index.html', result = prediction)
 
