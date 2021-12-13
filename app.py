@@ -12,10 +12,6 @@ def index():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    '''
-    Predict the insurance cost based on user inputs
-    and render the result to the html page
-    '''
     features = [float(x) for x in request.form.values()]
    
     data = []
