@@ -16,13 +16,13 @@ def predict():
     Predict the insurance cost based on user inputs
     and render the result to the html page
     '''
-    features = [float(i) for i in request.form.values()]
+    features = [float(x) for x in request.form.values()]
    
     data = []
     data.append(features)
     prediction = model.predict(data)
 
-    return render_template('index.html', result = str(*prediction))
+    return render_template('index.html', result = prediction)
 
 
 if __name__ == '__main__':
