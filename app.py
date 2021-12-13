@@ -36,7 +36,7 @@ def predict():
     data.append(X19)
     data.append(X20)
     prediction = model.predict([data])
-    output = round(prediction[0], 2)
+    output = round(prediction[0], 5)
 
     return render_template('index.html', result = output, X1=X1, X2=X2, X3=X3, X4=X4, X5=X5, X6=X6, X7=X7, X8=X8, X9=X9, X10=X10, X11=X11, X12=X12, X13=X13, X14=X14, X15=X15, X16=X16, X17=X17, X18=X18, X19=X19, X20=X20)
 
